@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            xmlns="http://javafx.com/javafx/17"
+            fx:controller="de.hhn.it.devtools.javafx.controllers.grocerylist.SettingsController">
+    <children>
+        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label text="Product type order"/>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
+                            <content>
+                                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"/>
+                            </content>
+                        </ScrollPane>
+                        <Label text="Storage type order"/>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                            <children>
+                                <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
+                                    <content>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"/>
+                                    </content>
+                                </ScrollPane>
+                                <ToggleButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                              mnemonicParsing="false" text="Prioritize storage"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
+                            <content>
+                                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"/>
+                            </content>
+                        </ScrollPane>
+                        <TextField promptText="Sorting profile name"/>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Add sorting profile"/>
+                    </children>
+                </VBox>
+                <Button mnemonicParsing="false" text="Home"/>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+        </HBox>
+    </children>
+</AnchorPane>
