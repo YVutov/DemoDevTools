@@ -25,7 +25,7 @@ public class OrderItemFX extends OrderItem {
     @Override
     public int incrementQuantity() {
         int ret = super.incrementQuantity();
-        quantity.setText("" + ret);
+        quantity.setText("Qty: " + ret);
         return ret;
     }
 
@@ -33,7 +33,7 @@ public class OrderItemFX extends OrderItem {
         visualization = new StackPane();
         title.setText(this.getName());
         StackPane.setAlignment(title, Pos.BOTTOM_CENTER);
-        quantity.setText(Integer.toString(getQuantity()));
+        quantity.setText("Qty: " + getQuantity());
         StackPane.setAlignment(quantity, Pos.TOP_LEFT);
         switch (this.getProductType()) {
             case HEALTH_AND_BEAUTY -> {productType.setImage(new Image("resources/Beauty.png"));}
